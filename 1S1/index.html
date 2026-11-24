@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PURPLE CHAT PRO</title>
+<link rel="stylesheet" href="stayl.css">
+
+</head>
+
+<body>
+<div class="app">
+
+
+<aside class="sidebar">
+
+    <h1 class="logo">chating <span>time</span></h1>
+
+    <div class="user">
+        <div class="avatar">U</div>
+        <div>
+            <h4>hisoka </h4>
+            <small>● متصل الآن</small>
+        </div>
+    </div>
+
+    <p class="section-title" >القائمة الرئيسية</p>
+
+    <nav class="navigation">
+        <a href="" class="active">الرئيسية</a>
+        <a href="freend.html">اصدقائي</a>
+        <a href="hisoka copy.html">نصيحة </a>
+    </nav>
+
+    <div class="side-bottom">
+        <p class="section-title">الرفاهية الرقمية</p>
+
+        <div class="break-card">
+            <i class="fas fa-heart"></i>
+            <h4>وقتك مهم 💜</h4>
+            <p>استخدم التطبيق للتواصل فقط. حياتك خارج الشاشة أهم.</p>
+        </div>
+        <div class="break-card">
+            <i class="fas fa-heart"></i>
+            <h4>ركز على مستقبلك💜</h4>
+            <p> حياتك خارج الشاشة أهم.</p>
+        </div>
+        <div class="break-card">
+            <i class="fas fa-heart"></i>
+            <h4> get up💜</h4>
+        <p> الوقت كالسيف ادا لم تقطعه قطعك</p>
+        </div>
+    </div>
+
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+    <header class="topbar">
+        <div>
+            <h2>مرحباً بك في Purple Chat</h2>
+            <p>مساحة خاصة للتواصل مع أصدقائك</p>
+        </div>
+
+        <div class="top-actions">
+            <button class="icon-btn" title="البحث"><i class="fas fa-search"></i></button>
+            <button class="icon-btn" title="الهدوء"><i class="fas fa-bell-slash"></i></button>
+            <button class="icon-btn" title="الملف الشخصي"><i class="fas fa-user"></i></button>
+        </div>
+    </header>
+
+    <div class="search">
+        <i class="fas fa-search"></i>
+        <input type="search" placeholder="ابحث عن محادثة...">
+    </div>
+
+    <section class="chat-container">
+
+        <div class="chat-header">
+
+            <div class="chat-user">
+                <div class="avatar">A</div>
+                <div>
+                    <h3> ahmed </h3>
+                    <small>● en ligne</small>
+                </div>
+            </div>
+
+            <div class="chat-actions">
+                <button class="icon-btn"><i class="fas fa-phone"></i></button>
+                <button class="icon-btn"><i class="fas fa-video"></i></button>
+                <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+
+        </div>
+
+        <div class="messages" id="messages">
+
+            <div class="day">اليوم - بداية المحادثة</div>
+
+            <div class="message other">
+                <div class="avatar">A</div>
+                <div class="message-content">
+                    السلام عليكم! كيف حالك؟
+                    <small>15:30</small>
+                </div>
+            </div>
+
+            <div class="message mine">
+                <div class="avatar">U</div>
+                <div class="message-content">
+                    وعليكم السلام، أنا بخير الحمد لله!
+                    <small>15:31</small>
+                </div>
+            </div>
+
+            <div class="message other">
+                <div class="avatar">A</div>
+                <div class="message-content">
+                    هل أنت متفرغ اليوم؟
+                    <small>15:32</small>
+                </div>
+            </div>
+
+            <div class="message mine">
+                <div class="avatar">U</div>
+                <div class="message-content">
+                    نعم، يمكننا التحدث قليلاً.
+                    <small>15:33</small>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="input-box">
+            <div class="input-tools">
+                <i class="fas fa-paperclip tool"></i>
+                <i class="far fa-smile tool"></i>
+                <input type="text" id="messageInput" placeholder="اكتب رسالتك هنا...">
+                <button class="send" onclick="sendMessage()">
+                    إرسال <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- RIGHT PANEL -->
+<aside class="right-panel">
+
+    <h3 class="right-title">أصدقاؤك</h3>
+
+    <div class="friend">
+        <div class="avatar">A</div>
+        <div class="friend-info">
+            <h4> ahmed </h4>
+            <p> en ligne </p>
+        </div>
+        <div class="online-dot"></div>
+    </div>
+
+    <div class="friend">
+        <div class="avatar" style="background:#159d9a">S</div>
+        <div class="friend-info">
+            <h4>sidali </h4>
+            <p>en ligne  </p>
+        </div>
+        <div class="online-dot offline"></div>
+    </div>
+
+    <div class="friend">
+        <div class="avatar" style="background:#c05c9d">w</div>
+        <div class="friend-info">
+            <h4>abdelmalike </h4>
+            <p> en ligne </p>
+        </div>
+        <div class="online-dot"></div>
+    </div>
+
+    <div class="friend">
+        <div class="avatar" style="background:#c28b42">I</div>
+        <div class="friend-info">
+            <h4>islem </h4>
+            <p>en ligne  </p>
+        </div>
+        <div class="online-dot offline"></div>
+    </div>
+S
+    <div class="status-card">
+        <h3><i class="far fa-clock"></i> وقت الاستخدام</h3>
+        <div class="time" id="timer">00:00:00</div>
+        <p>الوقت المستعمل في هذه الجلسة</p>
+        <div class="progress">
+            <span id="progress"></span>
+        </div>
+        <p style="margin-top:10px">حد التنبيه: ساعتان</p>
+    </div>
+
+    <div class="status-card">
+        <h3><i class="fas fa-leaf"></i> تذكير يومي</h3>
+        <p>لا تنسَ الدراسة، الرياضة، العائلة، وأصدقائك خارج الإنترنت.</p>
+    </div>
+
+</aside>
+
+</div>
+
+<!-- WARNING -->
+<div class="modal" id="warning">
+    <div class="modal-box">
+        <i class="fas fa-heart"></i>
+        <h2>حان وقت الراحة! 💜</h2>
+        <p>
+            لقد قضيت ساعتين في الموقع.
+            خذ استراحة قصيرة، اشرب الماء،
+            وابتعد عن الشاشة قليلاً.
+        </p>
+        <button class="primary-btn" onclick="closeWarning()">
+            حسناً، سأرتاح
+        </button>
+        <br>
+        <button class="secondary-btn" onclick="closeWarning()">
+            إغلاق التنبيه ومتابعة الاستخدام
+        </button>
+    </div>
+</div>
+
+<div class="notice" id="notice"></div>
+
+<script>
+function sendMessage() {
+
+    const input = document.getElementById("messageInput");
+    const text = input.value.trim();
+    
+    if (!text) return;
+
+    const message = document.createElement("div");
+    message.className = "message mine";
+
+    const avatar = document.createElement("div");
+    avatar.className = "avatar";
+    avatar.textContent = "U";
+
+    const content = document.createElement("div");
+    content.className = "message-content";
+
+    content.appendChild(document.createTextNode(text));
+
+    const time = document.createElement("small");
+    time.textContent = new Date().toLocaleTimeString("ar-DZ", {
+        hour: "2-digit",
+        minute: "2-digit"
+    });
+
+    content.appendChild(time);
+    message.appendChild(avatar);
+    message.appendChild(content);
+
+    const messages = document.getElementById("messages");
+    messages.appendChild(message);
+
+    input.value = "";
+    messages.scrollTop = messages.scrollHeight;
+}
+
+document.getElementById("messageInput")
+.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") sendMessage();
+});
+
+// مؤقت الاستخدام
+let seconds = 0;
+let warningShown = false;
+
+setInterval(function() {
+
+    if (document.hidden) return;
+
+    seconds++;
+
+    let h = Math.floor(seconds / 3600);
+    let m = Math.floor((seconds % 3600) / 60);
+    let s = seconds % 60;
+
+    document.getElementById("timer").textContent =
+        [h,m,s].map(x => String(x).padStart(2,"0")).join(":");
+
+    document.getElementById("progress").style.width =
+        Math.min((seconds / 7200) * 100,100) + "%";
+
+    if (seconds >= 7200 && !warningShown) {
+        warningShown = true;
+        document.getElementById("warning").style.display = "flex";
+    }
+
+},1000);
+
+function closeWarning() {
+    document.getElementById("warning").style.display = "none";
+}
+
+document.querySelectorAll(".menu a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        document.querySelectorAll(".menu a")
+        .forEach(a => a.classList.remove("active"));
+
+        this.classList.add("active");
+    });
+});
+
+document.querySelector(".top-actions button:nth-child(2)")
+.addEventListener("click", function() {
+    showNotice("تم تذكيرك بتقليل الإشعارات 💜");
+});
+
+function showNotice(text) {
+    const notice = document.getElementById("notice");
+    notice.textContent = text;
+    notice.style.display = "block";
+
+    setTimeout(() => {
+        notice.style.display = "none";
+    },3000);
+}
+</script>
+<script src="particles.js"></script>
+</body>
+</html>
